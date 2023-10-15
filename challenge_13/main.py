@@ -15,4 +15,21 @@
 prompt = input("Enter a sentence with letters and digits : ")
 arr = [x for x in prompt.split(" ")]
 
+# print(arr[0][0])
+
+letter_count = 0
+digit_count = 0
+
+for word in arr:
+    for letter in word:
+        if letter.isalpha():
+            letter_count += 1
+        if letter.isdigit():
+            digit_count += 1
+
+print("LETTERS : ", letter_count)
+print("DIGIT : ", digit_count)
+
+
+
 
